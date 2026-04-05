@@ -5,7 +5,7 @@
       <FullPath>E:\GitHub\high-performance-http-server\build\x64\Release\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>E:\GitHub\high-performance-http-server\build\bin\Release\http_server.exe</FullPath>
+      <FullPath>E:\GitHub\high-performance-http-server\build\Release\http_server.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

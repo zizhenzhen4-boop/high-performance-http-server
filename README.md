@@ -95,3 +95,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Author
 
 - **zizizhen4-Boop** - [GitHub Profile](https://github.com/zizizhen4-Boop)
+
+### Quick Start (Windows)
+
+For quick setup and running:
+
+1. **Build**: Double-click `build.bat`
+2. **Run**: Double-click `run.bat`
+
+This will automatically open your browser to `http://localhost:9000`.

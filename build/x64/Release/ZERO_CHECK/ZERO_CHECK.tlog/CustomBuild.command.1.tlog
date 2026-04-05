@@ -1,6 +1,6 @@
 ^E:\GITHUB\HIGH-PERFORMANCE-HTTP-SERVER\BUILD\CMAKEFILES\4E5D8C05C78879E20A18C4D74309F9ED\GENERATE.STAMP.RULE
 setlocal
-E:\GitHub\bin\cmake.exe -SE:/GitHub/high-performance-http-server -BE:/GitHub/high-performance-http-server/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/GitHub/high-performance-http-server/build/HttpServer.slnx
+E:\GitHub\bin\cmake.exe -SE:/GitHub/high-performance-http-server -BE:/GitHub/high-performance-http-server/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/GitHub/high-performance-http-server/build/high_performance_http_server.slnx
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
