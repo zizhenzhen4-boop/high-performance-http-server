@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"E:/GitHub/high-performance-http-server/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

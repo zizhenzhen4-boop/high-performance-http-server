@@ -1,0 +1,10 @@
+^E:\GITHUB\HIGH-PERFORMANCE-HTTP-SERVER\CMAKELISTS.TXT
+setlocal
+E:\GitHub\bin\cmake.exe -SE:/GitHub/high-performance-http-server -BE:/GitHub/high-performance-http-server/build --check-stamp-file E:/GitHub/high-performance-http-server/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

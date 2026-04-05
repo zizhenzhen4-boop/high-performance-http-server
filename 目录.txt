@@ -1,0 +1,10 @@
+high-performance-http-server/
+├── src/
+│   └── http_server.cpp          # 你的源代码
+├── www/                         # 静态文件目录
+│   └── index.html               # 示例首页
+├── build/                       # 编译输出目录（稍后创建）
+├── .gitignore                   # Git忽略文件
+├── CMakeLists.txt               # CMake构建文件
+├── README.md                    # 项目说明文档
+└── LICENSE                      # 开源许可证
