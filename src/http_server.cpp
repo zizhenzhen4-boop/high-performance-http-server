@@ -138,7 +138,20 @@ public:
         std::istringstream iss(request_line);
         iss >> method >> path >> version;
 
+        // 解析头部 - 查找 \r\n\r\n 作为头部结束标志
+        end_pos = request_str.find("\r\n\r\n", pos);
+        if (end_pos == std::string::npos) {
+            // 如果没有找到 \r\n\r\n，可能是错误的请求格式
+            // 或者是 GET 请求没有 Body，这里暂时认为是有效的，Body 为空
+            // 但为了更严谨，可以返回 false
+            // return false; 
+            // 暂时处理为：找到 \r\n\r\n 作为结束标志
+            return false; // 没有找到完整的头部结束符
+        }
+
         // 解析头部
+        size_t header_end = end_pos;
+        size_t current_pos = pos;
         while (true) {
             end_pos = request_str.find("\r\n", pos);
             if (end_pos == std::string::npos) return false;
@@ -164,8 +177,8 @@ public:
             }
         }
 
-        // 获取请求体
-        body = request_str.substr(pos);
+        // 获取请求体 - 从 \r\n\r\n 之后开始
+        body = request_str.substr(header_end + 4); // +4 for length of \r\n\r\n
 
         return true;
     }
